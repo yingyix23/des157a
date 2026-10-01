@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0A3323;
+}
+
+#container {
+    width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1200px;
+}
+
+#banner {
+    width: 1200px;
+    height: 250px;
+    margin: 0;
+    background-image: url("images/branner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner h1 {
+    font-family: "Engagement", cursive;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+    font-size: 62px;
+    color: #D3868C;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.908);
+}
+
+#subject {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #D3868C;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.908);
+}
+
+main {
+    width: 1200px;
+    min-height: 390px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 70px 30px;
+    background-color: #105666;
+}
+
+main p {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0 10px;
+    text-align: center;
+    color: #F7F4D5;
+    font-size: 18px;
+}
+
+
+section {
+    width: 245px;
+    min-height: 300px;
+    box-sizing: border-box;
+    background-color: #F7F4D5;
+}
+
+section h2 {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 15px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    color: #839958;
+    background-color: #0A3323;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 22px 14px;
+    text-align: center;
+}
+
+section li {
+    margin: 20px 0;
+}
+
+section a {
+    color: #839958;
+    font-size: 18px;
+    text-decoration: none;
+    transition:color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+section a:hover {
+    color: #D3868C;
+    letter-spacing: 0.7px;
+}
+
+
+footer {
+    width: 1200px;
+    min-height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    margin: 0;
+    color: #105666;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+footer a {
+    color: #105666;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #D3868C;
+    text-decoration: underline;
+}
