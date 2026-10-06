@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color: white;
+    color: #F7F4D5;
+    font-family: "Anonymous Pro", monospace;
+}
+
+header {
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 0 0.1em;
+    font-family: "Engagement", cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: #D3868C;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.908);
+}
+
+main {
+    background-color: #105666;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 0px;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 48px;
+    margin-bottom: 3em;
+}
+
+article h2 {
+    margin: 0 0 0.3em;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+
+time {
+    display: block;
+    margin-bottom: 2em;
+    font-size: 15px;
+    color: #D3868C;
+    text-align: center;
+}
+
+article p {
+    margin: 0 0 1.5em;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+figure {
+    margin: 2em 0;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #839958;
+}
+
+article a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+article a:hover {
+    color: #D3868C;
+}
+
+footer {
+    width: 800px;
+    min-height: 90px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    margin: 0;
+    color: #105666;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+footer a {
+    color: #105666;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #D3868C;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 32px 16px;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 32px 16px;
+    }
+
+    article {
+        padding: 24px;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+}
