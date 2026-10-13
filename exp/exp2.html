@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 2: Functions and DOM</title>
+</head>
+<body>
+    <h1>How Are You Feeling Today?</h1>
+    <p id="message"></p>
+
+    <script>
+        var mood = prompt('How are you feeling today? Happy? Sad? Angry? or Tired?', '');
+
+        function dayMood(feeling) {
+            var message;
+            
+            if(feeling === 'happy') {
+                message = 'I am so glad that you are happy today!';
+            }
+            else if (feeling === 'sad') {
+                message = 'No worried, everything will get better soon!'
+            }
+            else if (feeling === 'angry') {
+                message = 'Maybe is time to get a tea or coffee and calm down a moment!'
+            }
+            else{
+                message = 'You should get some reset!';
+            }
+
+            return message;
+        }
+
+        function changePage(feeling) {
+            document.querySelector('#message').innerHTML = dayMood(feeling);
+
+             if(feeling === 'happy') {
+               document.querySelector('body').style.backgroundColor = 'yellow';
+            }
+            else if (feeling === 'sad') {
+                document.querySelector('body').style.backgroundColor = 'blue';
+            }
+            else if (feeling === 'angry') {
+                document.querySelector('body').style.backgroundColor = 'red';
+            }
+            else{
+               document.querySelector('body').style.backgroundColor = 'green';
+            }
+        }
+        changePage(mood);
+    </script>
+
+
+</body>
+</html>
