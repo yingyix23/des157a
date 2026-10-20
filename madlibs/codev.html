@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs: Jiji's Advanture</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+<!--     google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link href="codevstyle.css" rel="stylesheet">
+</head>
+    <header>
+        <img src="images/banner.png" alt="Colorful banner for Jiji's Mad Libs" width="1200" height="250">
+        <h1>MAD LIBS</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fill in the Blanks</h2>
+                <form>
+                    <section>
+                    <p>
+                        <label>1. Choose an activity</label>
+                        <select id="activity" required>
+                            <option value="">Choose one</option>
+                            <option value="running">Running</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="dancing">Dancing</option>
+                        </select>
+                    </p>
+
+
+                    <p>
+                        <label>2. Enter a verb</label>
+                        <input type="text" id="verb1" required>
+                    </p>
+
+
+                    <p>
+                        <label>3. Choose a place</label>
+                        <select id="place" required>
+                            <option value="">Choose one</option>
+                            <option value="mall">Mall</option>
+                            <option value="park">Park</option>
+                            <option value="school">School</option>
+                        </select>
+                    </p>
+
+
+                    <p>
+                        <label>4. Enter a store</label>
+                        <input type="text" id="store" required>
+                    </p>
+
+
+                    <p>
+                        <label>5. Enter an object</label>
+                        <input type="text" id="object" required>
+                    </p>
+                </section>
+
+
+                <section>
+                    <p>
+                        <label>6. Choose an emotion</label>
+                        <select id="emotion1" required>
+                            <option value="">Choose one</option>
+                            <option value="happy">Happy</option>
+                            <option value="excited">Excited</option>
+                            <option value="nervous">Nervous</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>7. Enter a verb</label>
+                        <input type="text" id="verb2" required>
+                    </p>
+
+
+                    <p>
+                        <label>8. Enter a noun</label>
+                        <input type="text" id="noun" required>
+                    </p>
+
+
+                    <p>
+                        <label>9. Enter a location</label>
+                        <input type="text" id="location" required>
+                    </p>
+
+
+                    <p>
+                        <label>10. Enter an emotion</label>
+                        <input type="text" id="emotion2" required>
+                    </p>
+
+                </section>
+
+
+                <input type="submit" value="Generate Story">
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

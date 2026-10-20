@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: #111;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.mad {
+    color: #85816f;
+}
+
+.question {
+    color: #62616b;
+}
+
+.exclamation {
+    color: #d34d4d;
+}
+
+
+main {
+    background-color: #f3e8e7;
+    max-width: 800px;
+    margin: 20px auto 70px;
+}
+
+
+h2 {
+    margin: 0 0 25px;
+    text-align: center;
+    color: #245c9e;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 60px;
+}
+
+label {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+input[type="text"],
+select {
+    width: 115px;
+    height: 28px;
+    padding: 4px 6px;
+    border: none;
+    background-color: #e2e5e3;
+    font-family: "Architects Daughter", cursive;
+    font-size: 13px;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: 2px dashed gray;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 65px;
+    border: 1px solid black;
+    border-radius: 26px;
+    background-color: #d64d4d;
+    color: #111;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+input[type="submit"]:hover {
+    transform: translateX(-50%) scale(1.05);
+}
