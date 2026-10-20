@@ -33,22 +33,10 @@ header h1 {
     white-space: nowrap;
 }
 
-.mad {
-    color: #85816f;
-}
-
-.question {
-    color: #62616b;
-}
-
-.exclamation {
-    color: #d34d4d;
-}
-
-
 main {
     background-color: #f3e8e7;
-    max-width: 800px;
+    max-width: 1200px;
+    height: 500px;
     margin: 20px auto 70px;
 }
 
@@ -58,7 +46,7 @@ h2 {
     text-align: center;
     color: #245c9e;
     font-family: "Amatic SC", sans-serif;
-    font-size: 36px;
+    font-size: 56px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -68,40 +56,22 @@ h2 {
 form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     column-gap: 60px;
 }
 
 label {
     font-family: "Amatic SC", sans-serif;
-    font-size: 21px;
+    font-size: 36px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    line-height: 1.2em;
     white-space: nowrap;
-}
-
-input[type="text"],
-select {
-    width: 115px;
-    height: 28px;
-    padding: 4px 6px;
-    border: none;
-    background-color: #e2e5e3;
-    font-family: "Architects Daughter", cursive;
-    font-size: 13px;
-}
-
-input[type="text"]:focus,
-select:focus {
-    outline: 2px dashed gray;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"] {
     position: absolute;
-    left: 50%;
-    bottom: -32px;
-    transform: translateX(-50%);
+    bottom:10%;
     width: 220px;
     height: 65px;
     border: 1px solid black;
