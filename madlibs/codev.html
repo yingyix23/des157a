@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mad Libs: Jiji's Advanture</title>
+    <title>Mad Libs: Jiji's Adventure</title>
+
+    
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
@@ -13,20 +15,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
 
     <link href="codevstyle.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
 </head>
+
+<body>
     <header>
         <img src="images/banner.png" alt="Colorful banner for Jiji's Mad Libs" width="1200" height="250">
         <h1>MAD LIBS</h1>
     </header>
 
+
     <main>
         <section>
-            <h2>Fill in the Blanks</h2>
-                <form>
+            <h2 id="pageTitle">Fill in the Blanks</h2>
+                <form id="myform">
+                    <div id="form-fields">
                     <section>
                     <p>
                         <label>1. Choose an activity</label>
-                        <select id="activity" required>
+                        <select id="activity" class="dropdown">
                             <option value="">Choose one</option>
                             <option value="running">Running</option>
                             <option value="shopping">Shopping</option>
@@ -37,13 +45,13 @@
 
                     <p>
                         <label>2. Enter a verb</label>
-                        <input type="text" id="verb1" required>
+                        <input type="text" id="verb1">
                     </p>
 
 
                     <p>
                         <label>3. Choose a place</label>
-                        <select id="place" required>
+                        <select id="place" class="dropdown" >
                             <option value="">Choose one</option>
                             <option value="mall">Mall</option>
                             <option value="park">Park</option>
@@ -68,7 +76,7 @@
                 <section>
                     <p>
                         <label>6. Choose an emotion</label>
-                        <select id="emotion1" required>
+                        <select id="emotion1" class="dropdown" required>
                             <option value="">Choose one</option>
                             <option value="happy">Happy</option>
                             <option value="excited">Excited</option>
@@ -98,14 +106,17 @@
                         <label>10. Enter an emotion</label>
                         <input type="text" id="emotion2" required>
                     </p>
-
                 </section>
+                </div>
 
+                <article id="madlib"></article>
+                <input type="submit" id="submitBtn" value="Generate Story">
 
-                <input type="submit" value="Generate Story">
-
+                
             </form>
 
+            
+                
         </section>
 
     </main>
