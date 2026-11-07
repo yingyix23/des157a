@@ -66,6 +66,10 @@ header p {
     border-right: 8px solid #080908;
     object-fit: contain;
     cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;  /* removes the selecting image blue flash on tap */
+    -webkit-user-drag: none;                    /* stops the "ghost image" drag in browsers */
+
 }
 
 .a, .b{
@@ -91,7 +95,33 @@ header p {
     animation-iteration-count: infinite;
 } 
 
-.popup{
+/* black translucent background */
+#popup {
+    position: fixed;
+    inset: 0;                     
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;                  
+    cursor: pointer;
+}
+
+/* image modal */
+#popup img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 8px solid #080908;    
+}
+
+/* hides the modal unless clicked */
+#popup.hidden {
+    display: none;
+}
+
+/* old popup css code */
+/* .popup{
     width: 50%;
     justify-items: center;
     align-items: center;
@@ -104,4 +134,4 @@ header p {
 
 .hidden{
     display: none;
-}
+} */
