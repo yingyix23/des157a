@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --sliderwidth: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Playwrite IT Trad", cursive;
+    font-weight: 100;
+    font-style: normal;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url("./images/background.jpg") center / cover fixed no-repeat;
+
+background-color: #18271c;
+}
+
+header {
+    padding: 24vh 20px 65px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #e5ff00;
+    font-size: clamp(26px, 3.2vw, 44px);
+}
+
+header p {
+    color: white;
+    font-size: 14px;
+    text-shadow: 0 1px 5px black;
+}
+
+#one {
+    width: 100%;
+    /* overflow-x: hidden; */
+    height: 356px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: max-content;
+    height: 100%;
+}
+
+.slider div img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    display: block;
+    margin-right: 0;
+    border-left: 8px solid #080908;
+    border-right: 8px solid #080908;
+    object-fit: contain;
+    cursor: pointer;
+
+        -webkit-tap-highlight-color: transparent;  /* removes the selecting image blue flash on tap */
+    -webkit-user-drag: none;                    /* stops the "ghost image" drag in browsers */
+}
+
+.a, .b{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    padding: 48px 0;
+}
+
+
+
+@keyframes moveSliderLeft {
+    from { left: 0; }
+    to { left: var(--sliderwidth); }
+} 
+
+
+.left {
+    animation-name: moveSliderLeft;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} 
+
+
+#popup {
+    position: fixed;
+    inset: 0;                     
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;                  
+    cursor: pointer;
+}
+
+/* image modal */
+#popup img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 8px solid #080908;    
+}
+
+/* hides the modal unless clicked */
+#popup.hidden {
+    display: none;
+}
+/* .popup{
+     width: 50%;
+    justify-items: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.hidden{
+    display: none;
+} */
+
+
